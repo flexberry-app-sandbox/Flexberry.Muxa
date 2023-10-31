@@ -28,18 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-muxa-meteo-l',
             caption: i18n.t('forms.application.sitemap.muxa.i-i-s-muxa-meteo-l.caption'),
             title: i18n.t('forms.application.sitemap.muxa.i-i-s-muxa-meteo-l.title'),
-            icon: 'edit',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-muxa-city-l',
             caption: i18n.t('forms.application.sitemap.muxa.i-i-s-muxa-city-l.caption'),
             title: i18n.t('forms.application.sitemap.muxa.i-i-s-muxa-city-l.title'),
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-muxa-home-l',
             caption: i18n.t('forms.application.sitemap.muxa.i-i-s-muxa-home-l.caption'),
             title: i18n.t('forms.application.sitemap.muxa.i-i-s-muxa-home-l.title'),
-            icon: 'suitcase',
+            icon: 'chart line',
             children: null
           }]
         }
