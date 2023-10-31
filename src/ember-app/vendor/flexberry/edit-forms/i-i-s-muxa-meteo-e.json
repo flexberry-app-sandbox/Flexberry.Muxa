@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "City",
+      "projection": "CityL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Meteo",
+  "name": "IISMuxaMeteoE",
+  "className": "MeteoE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-muxa-meteo",
+      "modelProjection": "MeteoE"
+    }
+  ]
+}

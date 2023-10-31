@@ -1,0 +1,320 @@
+﻿{
+  "name": "IISMuxaMeteo",
+  "modelName": "i-i-s-muxa-meteo",
+  "className": "Meteo",
+  "nameSpace": "IIS.Muxa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDИдентификатор",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "влажность",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "долгота",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "местоположение",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "текущаяТемп",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "широта",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "city",
+      "relatedTo": "i-i-s-muxa-city",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "MeteoE",
+      "modelName": "i-i-s-muxa-meteo",
+      "attrs": [
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "местоположение",
+          "caption": "Местоположение",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "текущаяТемп",
+          "caption": "Текущая темп",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "влажность",
+          "caption": "Влажность",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "City",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "City",
+          "name": "city",
+          "relatedTo": "i-i-s-muxa-city",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "MeteoL",
+      "modelName": "i-i-s-muxa-meteo",
+      "attrs": [
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "местоположение",
+          "caption": "Местоположение",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "текущаяТемп",
+          "caption": "Текущая темп",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "влажность",
+          "caption": "Влажность",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "City",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "city",
+          "relatedTo": "i-i-s-muxa-city",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "МетеостанцияE",
+      "modelName": "i-i-s-muxa-meteo",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "местоположение",
+          "caption": "Местоположение",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "влажность",
+          "caption": "Влажность",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "МетеостанцияL",
+      "modelName": "i-i-s-muxa-meteo",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "местоположение",
+          "caption": "Местоположение",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "влажность",
+          "caption": "Влажность",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

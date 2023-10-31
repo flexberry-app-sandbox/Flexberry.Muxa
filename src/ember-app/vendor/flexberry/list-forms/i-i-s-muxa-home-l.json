@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-muxa-home-e",
+  "editForm": "i-i-s-muxa-home-e",
+  "external": false,
+  "caption": "Home",
+  "name": "IISMuxaHomeL",
+  "className": "HomeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-muxa-home",
+      "modelProjection": "HomeL"
+    }
+  ]
+}

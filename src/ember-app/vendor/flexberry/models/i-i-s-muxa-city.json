@@ -1,0 +1,181 @@
+﻿{
+  "name": "IISMuxaCity",
+  "modelName": "i-i-s-muxa-city",
+  "className": "City",
+  "nameSpace": "IIS.Muxa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDИдентификатор",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "долгота",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "широта",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CityE",
+      "modelName": "i-i-s-muxa-city",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "CityL",
+      "modelName": "i-i-s-muxa-city",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ГородE",
+      "modelName": "i-i-s-muxa-city",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ГородL",
+      "modelName": "i-i-s-muxa-city",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

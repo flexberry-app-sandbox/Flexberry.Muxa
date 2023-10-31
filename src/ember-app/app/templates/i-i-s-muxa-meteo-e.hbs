@@ -1,0 +1,115 @@
+<h3 class="ui header">{{t "forms.i-i-s-muxa-meteo-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.широта
+      class=(if (v-get validationModel "широта" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.широта-caption")
+      data-test-i-i-s-muxa-meteo-e-широта=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "широта" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.название
+      class=(if (v-get validationModel "название" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.название-caption")
+      data-test-i-i-s-muxa-meteo-e-название=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "название" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.местоположение
+      class=(if (v-get validationModel "местоположение" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.местоположение-caption")
+      data-test-i-i-s-muxa-meteo-e-местоположение=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "местоположение" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDИдентификатор
+      class=(if (v-get validationModel "iDИдентификатор" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.iDИдентификатор-caption")
+      data-test-i-i-s-muxa-meteo-e-iDИдентификатор=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDИдентификатор" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.долгота
+      class=(if (v-get validationModel "долгота" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.долгота-caption")
+      data-test-i-i-s-muxa-meteo-e-долгота=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "долгота" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.текущаяТемп
+      class=(if (v-get validationModel "текущаяТемп" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.текущаяТемп-caption")
+      data-test-i-i-s-muxa-meteo-e-текущаяТемп=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "текущаяТемп" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.влажность
+      class=(if (v-get validationModel "влажность" "isInvalid") "error")
+      label=(t "forms.i-i-s-muxa-meteo-e.влажность-caption")
+      data-test-i-i-s-muxa-meteo-e-влажность=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "влажность" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-muxa-meteo-e.city-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.city
+      displayAttributeName="название"
+      autocomplete=true
+      relationName="city"
+      projection="CityL"
+      title=(t "forms.i-i-s-muxa-meteo-e.city-caption")
+      readonly=readonly
+      componentName="cityLookup"
+      class=(if (v-get validationModel "city" "isInvalid") "error")
+      data-test-i-i-s-muxa-meteo-e-city=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "city" "message")}}
+  </div>
+</form>

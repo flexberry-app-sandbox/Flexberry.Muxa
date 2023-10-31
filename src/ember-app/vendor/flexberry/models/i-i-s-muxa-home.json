@@ -1,0 +1,299 @@
+﻿{
+  "name": "IISMuxaHome",
+  "modelName": "i-i-s-muxa-home",
+  "className": "Home",
+  "nameSpace": "IIS.Muxa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDИдентификатор",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "городID",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "долгота",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "широта",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "city",
+      "relatedTo": "i-i-s-muxa-city",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "HomeE",
+      "modelName": "i-i-s-muxa-home",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "городID",
+          "caption": "Город ID",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "City",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "City",
+          "name": "city",
+          "relatedTo": "i-i-s-muxa-city",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "HomeL",
+      "modelName": "i-i-s-muxa-home",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "городID",
+          "caption": "Город ID",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "City",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "city",
+          "relatedTo": "i-i-s-muxa-city",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗданиеE",
+      "modelName": "i-i-s-muxa-home",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "городID",
+          "caption": "Город ID",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗданиеL",
+      "modelName": "i-i-s-muxa-home",
+      "attrs": [
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "долгота",
+          "caption": "Долгота",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "широта",
+          "caption": "Широта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "городID",
+          "caption": "Город ID",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "iDИдентификатор",
+          "caption": "I d идентификатор",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

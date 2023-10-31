@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Muxa",
+  "applicationTitle": "Muxa",
+  "items": [
+    {
+      "link": null,
+      "menuName": "muxa",
+      "caption": "Muxa",
+      "title": "Muxa",
+      "children": [
+        {
+          "link": "i-i-s-muxa-meteo-l",
+          "menuName": null,
+          "caption": "Meteo",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-muxa-city-l",
+          "menuName": null,
+          "caption": "City",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-muxa-home-l",
+          "menuName": null,
+          "caption": "Home",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

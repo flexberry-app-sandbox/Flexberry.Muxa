@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "City",
+      "projection": "CityL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Home",
+  "name": "IISMuxaHomeE",
+  "className": "HomeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-muxa-home",
+      "modelProjection": "HomeE"
+    }
+  ]
+}
